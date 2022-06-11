@@ -10,7 +10,7 @@ Eat or Be Eaten e едноставна игра направена со Windows 
 ## MessageBox со Game Statistics по победа
 ![image](https://user-images.githubusercontent.com/83497391/173191594-37c92150-91f2-41c1-86c0-674feaf5b72d.png)
 ## MessageBox со Game Statistics по пораз
-![image](https://user-images.githubusercontent.com/83497391/173191531-f4af90df-59af-4147-a116-ef276ef473fa.png)
+![image](https://user-images.githubusercontent.com/83497391/173191717-b7876c86-06f8-47a6-8d6a-ff0213d9f95b.png)
 # Правила на играта
 # Податочни структури
 
