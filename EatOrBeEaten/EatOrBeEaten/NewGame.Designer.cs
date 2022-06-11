@@ -125,7 +125,7 @@
             this.Controls.Add(this.rbEasy);
             this.Controls.Add(this.label1);
             this.Name = "NewGame";
-            this.Text = "NewGame";
+            this.Text = "New Game";
             this.ResumeLayout(false);
             this.PerformLayout();
 

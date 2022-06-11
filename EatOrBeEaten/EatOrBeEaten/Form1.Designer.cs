@@ -34,9 +34,9 @@
             this.timerMoveBalls = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslblFoodEaten = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslblTimeAlive = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnNewGame = new System.Windows.Forms.Button();
             this.btnEndGame = new System.Windows.Forms.Button();
-            this.tsslblTimeAlive = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +71,13 @@
             this.tsslblFoodEaten.Size = new System.Drawing.Size(78, 17);
             this.tsslblFoodEaten.Text = "Food eaten: 0";
             // 
+            // tsslblTimeAlive
+            // 
+            this.tsslblTimeAlive.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tsslblTimeAlive.Name = "tsslblTimeAlive";
+            this.tsslblTimeAlive.Size = new System.Drawing.Size(95, 17);
+            this.tsslblTimeAlive.Text = "Time Alive: 00:00";
+            // 
             // btnNewGame
             // 
             this.btnNewGame.Location = new System.Drawing.Point(28, 13);
@@ -83,6 +90,7 @@
             // 
             // btnEndGame
             // 
+            this.btnEndGame.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnEndGame.Location = new System.Drawing.Point(123, 13);
             this.btnEndGame.Name = "btnEndGame";
             this.btnEndGame.Size = new System.Drawing.Size(75, 23);
@@ -90,13 +98,6 @@
             this.btnEndGame.Text = "End Game";
             this.btnEndGame.UseVisualStyleBackColor = true;
             this.btnEndGame.Click += new System.EventHandler(this.btnEndGame_Click);
-            // 
-            // tsslblTimeAlive
-            // 
-            this.tsslblTimeAlive.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tsslblTimeAlive.Name = "tsslblTimeAlive";
-            this.tsslblTimeAlive.Size = new System.Drawing.Size(95, 17);
-            this.tsslblTimeAlive.Text = "Time Alive: 00:00";
             // 
             // Form1
             // 
