@@ -37,7 +37,7 @@ namespace EatOrBeEaten
         }
         public void Move()
         {
-            if(MovingDirection == 0)    //up
+            if(MovingDirection == 0)        // up
             {
                 Center = new Point(Center.X, Center.Y-1);
             }
