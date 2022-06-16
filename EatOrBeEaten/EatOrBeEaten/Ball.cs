@@ -39,7 +39,7 @@ namespace EatOrBeEaten
         {
             if(MovingDirection == 0)        // up
             {
-                Center = new Point(Center.X, Center.Y-1);
+                Center = new Point(Center.X, Center.Y - 1);
             }
             else if(MovingDirection == 1)   // down
             {
@@ -47,19 +47,19 @@ namespace EatOrBeEaten
             }
             else if(MovingDirection == 2)   // left
             {
-                Center = new Point(Center.X-1, Center.Y);
+                Center = new Point(Center.X - 1, Center.Y);
             }
             else if(MovingDirection == 3)   // right
             {
-                Center = new Point(Center.X+1, Center.Y);
+                Center = new Point(Center.X + 1, Center.Y);
             }
             else if(MovingDirection == 4)   // diagonal (up - left)
             {
-                Center = new Point(Center.X-1, Center.Y-1);
+                Center = new Point(Center.X - 1, Center.Y - 1);
             }
             else if(MovingDirection == 5)   // diagonal (up - right)
             {
-                Center = new Point(Center.X+1, Center.Y-1);
+                Center = new Point(Center.X + 1, Center.Y - 1);
             }
             else if(MovingDirection == 6)   // diagonal (down - left)
             {
@@ -74,12 +74,12 @@ namespace EatOrBeEaten
         
         public bool IsOutOfBounds()
         {
-            return Center.X-Radius>=WindowWidth || Center.X+Radius<=0 
-                || Center.Y-Radius>=WindowHeight || Center.Y+Radius<=0;
+            return Center.X - Radius >= WindowWidth || Center.X + Radius <= 0 
+                || Center.Y - Radius >= WindowHeight || Center.Y + Radius <= 0;
         }
         public bool IsHit(PlayerBall ball)
         {
-            return Math.Sqrt(Math.Pow(Center.X-ball.Center.X,2) + Math.Pow(Center.Y-ball.Center.Y,2))<=ball.Radius+Radius;
+            return Math.Sqrt(Math.Pow(Center.X-ball.Center.X,2) + Math.Pow(Center.Y-ball.Center.Y,2)) <= ball.Radius + Radius;
         }
 
     }

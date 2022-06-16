@@ -71,11 +71,12 @@ namespace EatOrBeEaten
             {
                 foreach (Ball ball in Balls.ToList())
                 {
-                    if (ball.IsHit(PlayerBall)&&ball.Radius<=PlayerBall.Radius)
+                    if (ball.IsHit(PlayerBall) && ball.Radius <= PlayerBall.Radius)
                     {
                         Balls.Remove(ball);
                         Hits++;
-                        PlayerBall.Radius += 3;
+                        //PlayerBall.Radius += 3;
+                        PlayerBall.Radius = (int)(PlayerBall.Radius+ball.Radius*0.1);
                         if(PlayerBall.Radius > 150)
                         {
                             hasWon = true;

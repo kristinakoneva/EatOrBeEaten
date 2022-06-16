@@ -61,8 +61,8 @@ namespace EatOrBeEaten
         public string getStatistics(bool hasWon)
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append('\n'+"GAME STATISTICS:" + '\n');
-            sb.Append("Food Eaten: "+scene.Hits+'\n');
+            sb.Append('\n' + "GAME STATISTICS:" + '\n');
+            sb.Append("Food Eaten: " + scene.Hits + '\n');
             if (hasWon)
             {
                 sb.Append("Time Played: " + getTimeAliveMinutes() + " minute(s) and " + getTimeAliveSeconds() + " second(s)");
