@@ -1,0 +1,12 @@
+C:\Users\genom\Desktop\VP PROEKT\EatOrBeEaten\EatOrBeEaten\bin\Release\EatOrBeEaten.exe.config
+C:\Users\genom\Desktop\VP PROEKT\EatOrBeEaten\EatOrBeEaten\bin\Release\EatOrBeEaten.exe
+C:\Users\genom\Desktop\VP PROEKT\EatOrBeEaten\EatOrBeEaten\bin\Release\EatOrBeEaten.pdb
+C:\Users\genom\Desktop\VP PROEKT\EatOrBeEaten\EatOrBeEaten\obj\Release\EatOrBeEaten.csproj.AssemblyReference.cache
+C:\Users\genom\Desktop\VP PROEKT\EatOrBeEaten\EatOrBeEaten\obj\Release\EatOrBeEaten.csproj.SuggestedBindingRedirects.cache
+C:\Users\genom\Desktop\VP PROEKT\EatOrBeEaten\EatOrBeEaten\obj\Release\EatOrBeEaten.Form1.resources
+C:\Users\genom\Desktop\VP PROEKT\EatOrBeEaten\EatOrBeEaten\obj\Release\EatOrBeEaten.NewGame.resources
+C:\Users\genom\Desktop\VP PROEKT\EatOrBeEaten\EatOrBeEaten\obj\Release\EatOrBeEaten.Properties.Resources.resources
+C:\Users\genom\Desktop\VP PROEKT\EatOrBeEaten\EatOrBeEaten\obj\Release\EatOrBeEaten.csproj.GenerateResource.cache
+C:\Users\genom\Desktop\VP PROEKT\EatOrBeEaten\EatOrBeEaten\obj\Release\EatOrBeEaten.csproj.CoreCompileInputs.cache
+C:\Users\genom\Desktop\VP PROEKT\EatOrBeEaten\EatOrBeEaten\obj\Release\EatOrBeEaten.exe
+C:\Users\genom\Desktop\VP PROEKT\EatOrBeEaten\EatOrBeEaten\obj\Release\EatOrBeEaten.pdb
