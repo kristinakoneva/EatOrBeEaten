@@ -34,7 +34,7 @@ namespace EatOrBeEaten
         public void Resized(int width, int height)
         {
             Width = width;
-            Height=height;
+            Height = height;
             foreach (Ball ball in Balls)
             {
                 ball.WindowWidth = Width;
@@ -75,8 +75,7 @@ namespace EatOrBeEaten
                     {
                         Balls.Remove(ball);
                         Hits++;
-                        //PlayerBall.Radius += 3;
-                        PlayerBall.Radius = (int)(PlayerBall.Radius+ball.Radius*0.1);
+                        PlayerBall.Radius = (int)(PlayerBall.Radius + ball.Radius * 0.1);
                         if(PlayerBall.Radius > 150)
                         {
                             hasWon = true;

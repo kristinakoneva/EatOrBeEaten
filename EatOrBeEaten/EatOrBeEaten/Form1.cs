@@ -38,7 +38,6 @@ namespace EatOrBeEaten
             timeAlive = 0;
             updateTimeAlive();
             updateFoodEaten();
-
         }
         public void updateFoodEaten()
         {
@@ -53,7 +52,6 @@ namespace EatOrBeEaten
             return timeAlive / 60;
 
         }
-       
         public void updateTimeAlive()
         {
             tsslblTimeAlive.Text = string.Format("Time Alive: {0:00}:{1:00}", getTimeAliveMinutes(), getTimeAliveSeconds());
@@ -71,14 +69,12 @@ namespace EatOrBeEaten
             {
                 sb.Append("Time Alive: " + getTimeAliveMinutes() + " minute(s) and " + getTimeAliveSeconds() + " second(s)");
             }
-            
             return sb.ToString();
         }
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             scene.Draw(e.Graphics);
         }
-
         private void btnNewGame_Click(object sender, EventArgs e)
         {
             NewGame newGame = new NewGame();
@@ -105,7 +101,6 @@ namespace EatOrBeEaten
                 timerGenerateNewBalls.Start();
                 timerMoveBalls.Start();
                 timerTimeAlive.Start();
-
             }
             Invalidate();
         }
@@ -139,14 +134,14 @@ namespace EatOrBeEaten
                 if (scene.hasWon)
                 {
                     timersStop();
-                    MessageBox.Show("Congratulations! You won the game!" +'\n'+ getStatistics(true),"GAME FINISHED");
+                    MessageBox.Show("Congratulations! You won the game!" + '\n' + getStatistics(true), "GAME FINISHED");
 
                     initializeScene();
                 }
                 if (scene.hasLost)
                 {
                     timersStop();
-                    MessageBox.Show("Game over, you lost! You have been eaten!" + '\n' + getStatistics(false),"GAME OVER");
+                    MessageBox.Show("Game over, you lost! You have been eaten!" + '\n' + getStatistics(false), "GAME OVER");
 
                     initializeScene();
                 }
