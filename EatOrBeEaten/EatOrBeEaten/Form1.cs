@@ -118,9 +118,27 @@ namespace EatOrBeEaten
         private void timerMoveBalls_Tick(object sender, EventArgs e)
         {
             scene.Move();
+            scene.checkHits();
+            checkEndGame();
             Invalidate();
         }
+        public void checkEndGame()
+        {
+            if (scene.hasWon)
+            {
+                timersStop();
+                MessageBox.Show("Congratulations! You won the game!" + '\n' + getStatistics(true), "GAME FINISHED");
 
+                initializeScene();
+            }
+            if (scene.hasLost)
+            {
+                timersStop();
+                MessageBox.Show("Game over, you lost! You have been eaten!" + '\n' + getStatistics(false), "GAME OVER");
+
+                initializeScene();
+            }
+        }
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
             if(scene.PlayerBall == null && isPlaying)
@@ -131,20 +149,7 @@ namespace EatOrBeEaten
             {
                 scene.PlayerBall.Center = e.Location;
                 scene.checkHits();
-                if (scene.hasWon)
-                {
-                    timersStop();
-                    MessageBox.Show("Congratulations! You won the game!" + '\n' + getStatistics(true), "GAME FINISHED");
-
-                    initializeScene();
-                }
-                if (scene.hasLost)
-                {
-                    timersStop();
-                    MessageBox.Show("Game over, you lost! You have been eaten!" + '\n' + getStatistics(false), "GAME OVER");
-
-                    initializeScene();
-                }
+                checkEndGame();
             }
             updateFoodEaten();
             Invalidate();
